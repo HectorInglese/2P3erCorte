@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    background-image: url(./imagenes/clouds-3353159.jpg);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.blur{
+    background-color: rgba(110, 107, 107, 0.618);
+    height: 100vh;
+    width: 100vw;
+}
+
+.formDiv{
+    width: 50vw;
+	height: 70vh;
+	
+	position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+  	
+	margin: auto;
+    background-color: rgba(39, 119, 223, 0.15);  
+    backdrop-filter: blur(5px);
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+
+    border-radius: 15px;
+}
+
+.formBlur{
+    background-color: rgba(255, 255, 255, 0.385);
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    
+}
+
+.formBlur h1{
+    text-align: center;
+    padding: 10px;
+    letter-spacing: 1.6px;
+    font-size: 2rem;
+    text-transform: uppercase;
+    height: 10%;
+}
+
+
+.formBlur form {
+    margin: auto;
+    width: 95%;
+    height: 100%;
+   
+}
+
+.questions{
+    width: 100%;
+    height: 76%;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+   
+}
+
+.botones{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    
+    
+}
+
+.questions input{
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+    width: 95%;
+    padding: 15px;
+    margin: 25px auto;
+    font-size: 1.25rem;
+    border-radius: 15px;
+    border:none;
+}
+
+.botones input{
+    margin: 15px;
+    width: 200px;
+    height: 40px;
+    font-size: 1.25rem;
+    border-radius: 15px;
+    border:1px solid black;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    
+    background-color: rgba(218, 216, 216, 0.323);
+    transition: 
+        background-color .5s ease-in, 
+        font-size .4s ease-in,
+        width .6s ease,
+        height .6s ease;
+    font-weight: 600;
+   
+}
+
+.botones input:hover{
+    background-color: rgba(255, 255, 255, 0.775);
+    font-size:  1.3rem;
+    cursor: pointer;
+    width: 205px;
+    height: 45px;
+}
+
+#myProgress {
+    position: relative;
+    width: 100%;
+    height: 20px;
+    background-color: #ddd;
+  }
+  
+  #myBar {
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background-color: #82d6e9d5;
+  }
+  
+  #label {
+    text-align: center;
+    line-height: 20px;
+    color: rgb(19, 15, 15);
+    letter-spacing: 1.5px;
+    font-weight: 900;
+    margin: 0px 20px;
+  }
